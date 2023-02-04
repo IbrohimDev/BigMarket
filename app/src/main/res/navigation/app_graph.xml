@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_graph"
+   >
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.example.bigmarketapp.presentation.ui.screen.splash.SplashScreen"
+        android:label="SplashScreen"
+        tools:layout="@layout/screen_splash" >
+
+        <action
+            android:id="@+id/action_splashScreen_to_mainScreen"
+            app:destination="@id/mainScreen"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="com.example.bigmarketapp.presentation.ui.screen.main.MainScreen"
+        android:label="screen_main"
+        tools:layout="@layout/screen_main" />
+    <fragment
+        android:id="@+id/noConnectionScreen"
+        tools:layout="@layout/screen_no_connect"
+        android:name="com.example.bigmarketapp.presentation.ui.screen.NoConnectionScreen"
+        android:label="NoConnectionScreen" />
+
+</navigation>

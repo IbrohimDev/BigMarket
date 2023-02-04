@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Big Market</string>
+    <string name="to_basket">To Basket</string>
+    <string name="error_text">Some Error Occurred</string>
+    <string name="retry_text">Retry</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="counter">1x</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+</resources>
